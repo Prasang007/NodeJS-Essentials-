@@ -29,25 +29,25 @@ questions.forEach(question=>{
 
 
 
-// rl.question(question, (answer) => {
-//     process.stdout.write(`\n \n ${answer}`);
-//     process.exit();
+rl.question(question, (answer) => {
+    process.stdout.write(`\n \n ${answer}`);
+    process.exit();
 
-// });
-// rl.setPrompt(`What is your age? `);
-// rl.prompt();
+});
+rl.setPrompt(`What is your age? `);
+rl.prompt();
 
-// rl.on('pause', () => {
-//     console.log('Paused Event is invoked');
-// });
-// rl.on('line', (age) => {
-//     console.log(`Age received by the user: ${age}`);
-//     rl.close();
+rl.on('pause', () => {
+    console.log('Paused Event is invoked');
+});
+rl.on('line', (age) => {
+    console.log(`Age received by the user: ${age}`);
+    rl.close();
   
-// });
-// rl.on('SIGINT', () => {
-//     rl.question('Exit (y or n)? ', (input) => {
-//       if (input.match(/^y(es)?$/i)) { rl.pause(); }
-//     });
-// });
+});
+rl.on('SIGINT', () => {
+    rl.question('Exit (y or n)? ', (input) => {
+      if (input.match(/^y(es)?$/i)) { rl.pause(); }
+    });
+});
 // https://www.geeksforgeeks.org/node-js-readline-module/
