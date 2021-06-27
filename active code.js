@@ -1,4 +1,3 @@
-<script>
 // The following implementation assumes that the activities
 // are already sorted according to their finish time
 
@@ -38,4 +37,3 @@
 	printMaxActivities(s, f, n);
 	
 	// This code is contributed by avanitrachhadiya2155
-</script>
